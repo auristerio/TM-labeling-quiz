@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#dfddd5">
+  <title>TM Labeling Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="app-shell">
+    <header class="page-header">
+      <p class="eyebrow">AURISTERIO · LEARNING LAB</p>
+      <h1>TM Labeling Quiz</h1>
+      <p class="intro">Identify each structure by entering its anatomical name.</p>
+    </header>
+
+    <section class="quiz-panel" aria-labelledby="quiz-heading">
+      <div class="quiz-toolbar">
+        <div>
+          <p class="eyebrow">PRACTICE</p>
+          <h2 id="quiz-heading">Tympanic Membrane</h2>
+        </div>
+        <p class="progress" id="progress">0 questions</p>
+      </div>
+
+      <p class="image-help">Enter your answers in the fields connected to each arrow. Pinch or zoom your browser if you
+        need a closer look.</p>
+
+      <div class="image-scroll" id="image-scroll">
+        <div class="image-stage" id="image-stage">
+          <img id="anatomy-image" src="images/tm.png"
+            alt="Anatomical illustration used for the labeling quiz">
+          <svg id="arrow-layer" class="arrow-layer" aria-hidden="true"></svg>
+          <div id="label-layer" class="label-layer"></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="button button-primary" id="submit-button" type="button">Submit answers</button>
+        <button class="button button-secondary" id="reveal-button" type="button">Reveal answers</button>
+        <button class="button button-primary" id="secondRetryBtn" type="button" hidden>Retry</button>
+      </div>
+      <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <section class="results-overlay" id="results-overlay" role="dialog" aria-modal="true" aria-labelledby="results-title"
+    hidden>
+    <div class="results-content">
+      <p class="eyebrow">YOUR RESULT</p>
+      <h2 id="results-title">Quiz complete</h2>
+      <p class="score-number" id="score-number">0 / 0</p>
+      <p class="score-percent" id="score-percent">0%</p>
+      <p class="score-caption" id="score-caption">Correct answers</p>
+      <div class="results-actions">
+        <button class="button button-primary" id="retry-button" type="button">Retry</button>
+        <button class="button button-secondary" id="answers-button" type="button">Answers</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="arrowdrawer.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
