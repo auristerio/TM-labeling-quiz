@@ -13,7 +13,7 @@ const QUESTIONS = [
   { id: "label1", answer: "Annulus", aliases: ["Annular Ligament"] },
   { id: "label2", answer: "Umbo"},
   { id: "label3", answer: "Pars Flaccida"},
-  { id: "label4", answer: "Manubrium", aliases: ["Manubrium of malleus"] },
+  { id: "label4", answer: "Manubrium", aliases: ["Handle of malleus"] },
   { id: "label5", answer: "Pars Tensa" },
   { id: "label6", answer: "Cone of light"}
 ];
